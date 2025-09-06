@@ -1,2 +1,9 @@
-# file-organizer-tool
-A CLI and GUI tool intended to make organizing "loose" files in a directory into subfolders by file type simple. Though the basis is simple, this will be a fully fledged development project with functional utilities, unit testing, arg parsing, UI testing, and packaging. It will go through the full software development cycle.
+# File Organizer Tool
+File Organizer Tool is a utility designed to help users quickly organize “loose” files in a directory into subfolders based on file type. While the core functionality is simple, this project is a fully-fledged development effort that covers the entire software development lifecycle, including:
+Functional utilities
+Command-line interface (CLI) with argument parsing
+Unit testing
+GUI interface with PyQt
+UI testing
+Packaging for distribution
+This project aims to provide a complete, professional-quality tool while serving as a hands-on example of end-to-end software development.
