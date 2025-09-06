@@ -6,4 +6,5 @@ File Organizer Tool is a utility designed to help users quickly organize “loos
 - GUI interface with PyQt
 - UI testing
 - Packaging for distribution
+
 This project aims to provide a complete, professional-quality tool while serving as a hands-on example of end-to-end software development.
