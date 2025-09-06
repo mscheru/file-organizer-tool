@@ -202,13 +202,16 @@ def generate_summary(successes: dict[Path, Path], base_path: Path) -> None:
     destination_name = destination.relative_to(base_path)
     print(f"{source.name} -> {destination_name}")
 
-def rearrange_files(curr_dir: Path) -> None:
+def rearrange_files(curr_dir: Path, dry_run: bool = False) -> None:
   '''Calls all relevant functions to rearrange directory'''
   files = get_files(curr_dir)
   create_categories(curr_dir)
   moves = map_files(files, curr_dir)
 
   display_planned_moves(moves, curr_dir)
+  if dry_run:
+    return 
+
   answer = confirm_move()
   if answer == 'n':
     print('Quitting file rearranger...')
@@ -219,8 +222,6 @@ def rearrange_files(curr_dir: Path) -> None:
 
   print('Rearrangement complete')
 
-if __name__ == '__main__':
-  rearrange_files(FILE_TO_ORGANIZE)
 
 
   
